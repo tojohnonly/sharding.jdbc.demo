@@ -1,4 +1,5 @@
-
+ 修改自：yinjihuan/sharding-jdbc  https://github.com/yinjihuan/sharding-jdbc
+ 
 read-write-springboot：Spring Boot版 Sharding JDBC 读写分离示列
 
 db-sharding-springboot：Spring Boot版 Sharding JDBC 垂直拆分（不同的表在不同的库中）
