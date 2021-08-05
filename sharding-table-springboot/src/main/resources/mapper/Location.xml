@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ensk.exp.sharding.jdbc.repository.LocationRepository">
+
+    <resultMap id="baseResultMap" type="com.ensk.exp.sharding.jdbc.entity.Location">
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="city" property="city" jdbcType="VARCHAR"/>
+        <result column="region" property="region" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="building_num" property="buildingNum" jdbcType="VARCHAR"/>
+        <result column="unit_num" property="unitNum" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="addLocation">
+        INSERT INTO location (id, city, region, name, building_num, unit_num)
+        VALUES (#{id}, #{city}, #{region}, #{name}, #{buildingNum}, #{unitNum})
+    </insert>
+
+    <select id="list" resultMap="baseResultMap">
+        SELECT ld.*
+        FROM location ld
+    </select>
+
+</mapper>
