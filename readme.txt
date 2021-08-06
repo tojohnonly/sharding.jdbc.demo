@@ -1,4 +1,4 @@
- 修改自：yinjihuan/sharding-jdbc  https://github.com/yinjihuan/sharding-jdbc
+【修改自：yinjihuan/sharding-jdbc  https://github.com/yinjihuan/sharding-jdbc】
  
 read-write-springboot：Spring Boot版 Sharding JDBC 读写分离示列
 
